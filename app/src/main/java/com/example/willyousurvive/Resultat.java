@@ -37,16 +37,16 @@ public class Resultat extends AppCompatActivity {
             texteLabel.setText("C'est étonnant que même sans apocalypse tu sois toujours en vie !");
         }
         else if (scoreTot<41) {
-            texteLabel.setText("Profites ");
+            texteLabel.setText("Profites de chaque jour, on sait jamais ce qu'il peut se passer et vu tes capacités de survie c'est pas gagné pour toi !");
         }
         else if (scoreTot<61) {
-            texteLabel.setText("Le score est entre 41 et 60");
+            texteLabel.setText("Ça s'annoncait pas trop mal au début et puis finalement survivre à l'apocalypse ça sert à rien tu peux même pas le mettre dans ton CV !");
         }
         else if (scoreTot<81) {
-            texteLabel.setText("Le score est entre 61 et 80");
+            texteLabel.setText("Alors toi c'est sûr tu regardes des films sur l'apocalypse pour t'entraîner !");
         }
         else {
-            texteLabel.setText("Le score est supérieur à 80");
+            texteLabel.setText("Alors toi c'est sur t'as de l'expérience dans le milieu ! C'est quoi ton secret ? Tes parents t'ont laissé te débrouiller seul(e) dans une forêt quand t'avais 6 ans ?");
         }
         historic();
     }

@@ -37,13 +37,14 @@
 
     <TextView
         android:id="@+id/texteLabel"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="#94000000"
         android:backgroundTint="#000000"
         android:text="@string/textview"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

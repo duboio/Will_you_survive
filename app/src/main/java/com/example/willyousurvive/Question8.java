@@ -42,16 +42,16 @@ public class Question8 extends AppCompatActivity {
         Intent intent = new Intent(this, Question9.class);
         int scoreRep = -1 ;
         if (radioRepeupler.isChecked()) {
-            scoreRep = 2 ;
+            scoreRep = 6 ;
         }
         else if (radioCapote.isChecked()) {
             scoreRep = 3 ;
         }
         else if (radioBlond.isChecked()) {
-            scoreRep = 4 ;
+            scoreRep = 2 ;
         }
         else if (radioSeparation.isChecked()) {
-            scoreRep = 6 ;
+            scoreRep = 5 ;
         }
         else if (radioSacrifier.isChecked()) {
             scoreRep = 7 ;
