@@ -61,17 +61,17 @@ public class Resultat extends AppCompatActivity {
 
     public void mail(android.view.View v) {
 
-        Log.i("Send email", "");
+        Log.i("Send results", "");
         Intent i = new Intent(Intent.ACTION_SEND);
         i.setData(Uri.parse("mailto:"));
         i.setType("text/plain");
         i.putExtra(Intent.EXTRA_SUBJECT, "Résultats WYS");
         i.putExtra(Intent.EXTRA_TEXT   , "Voici les résultats de ton test Will You Survive : " + scoreTot + "/100.");
         try {
-            startActivity(Intent.createChooser(i, "Send mail..."));
-            Log.i("Finish sending email", "");
+            startActivity(Intent.createChooser(i, "Send results..."));
+            Log.i("Finish sending results", "");
         } catch (android.content.ActivityNotFoundException ex) {
-           toast("There are no email clients installed.");
+           toast("Aucun client pour envoyer les résultats");
         }
 
     }
