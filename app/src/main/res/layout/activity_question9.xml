@@ -72,7 +72,7 @@
 
         <RadioButton
             android:id="@+id/radioGarrot"
-            android:layout_width="390dp"
+            android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -84,7 +84,7 @@
 
         <RadioButton
             android:id="@+id/radioSecher"
-            android:layout_width="390dp"
+            android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -95,7 +95,7 @@
 
         <RadioButton
             android:id="@+id/radioCouper"
-            android:layout_width="390dp"
+            android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -106,7 +106,7 @@
 
         <RadioButton
             android:id="@+id/radioDésinfecter"
-            android:layout_width="390dp"
+            android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -117,7 +117,7 @@
 
         <RadioButton
             android:id="@+id/radioArgile"
-            android:layout_width="390dp"
+            android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_weight="1"
             android:gravity="center"
