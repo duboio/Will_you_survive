@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_transp2"
+    tools:context=".Question8">
+
+    <Button
+        android:id="@+id/buttonPrecedent"
+        android:layout_width="63dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="12dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:backgroundTint="#4D634B"
+        android:onClick="retour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSuivant"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSuivant"
+        android:layout_width="63dp"
+        android:layout_height="59dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:backgroundTint="#4D634B"
+        android:onClick="activityQuestion9"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPrecedent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonPrecedent"
+        app:layout_constraintTop_toTopOf="@+id/buttonPrecedent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_8_15"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPrecedent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSuivant"
+        app:layout_constraintStart_toEndOf="@+id/buttonPrecedent"
+        app:layout_constraintTop_toTopOf="@+id/buttonPrecedent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/vous_n_tes_plus_que_deux_sur_terre_et_en_plus_de_sexe_oppos"
+        android:textAlignment="center"
+        android:textColor="#BF360C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="306dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.26">
+
+        <RadioButton
+            android:id="@+id/radioRepeupler"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/va_falloir_commencer_repeupler"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioCapote"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/tu_as_un_moyen_de_contraception"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioBlond"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/c_est_dommage_je_n_aime_pas_les_blond_e_s"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioSeparation"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/toi_tu_vas_droite_et_moi_gauche"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioSacrifier"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/tu_le_la_sacrifies_pour_survivre_un_peu_plus"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

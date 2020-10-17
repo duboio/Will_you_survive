@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_transp2"
+    tools:context=".Question3">
+
+    <Button
+        android:id="@+id/buttonPrecedent"
+        android:layout_width="63dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="12dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:backgroundTint="#4D634B"
+        android:onClick="retour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSuivant"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSuivant"
+        android:layout_width="63dp"
+        android:layout_height="59dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:backgroundTint="#4D634B"
+        android:onClick="activityQuestion4"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPrecedent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonPrecedent"
+        app:layout_constraintTop_toTopOf="@+id/buttonPrecedent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_3_15"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPrecedent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSuivant"
+        app:layout_constraintStart_toEndOf="@+id/buttonPrecedent"
+        app:layout_constraintTop_toTopOf="@+id/buttonPrecedent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/une_explosion_nucl_aire_vient_de_se_produire_et_tu_dois_te_nourrir"
+        android:textAlignment="center"
+        android:textColor="#BF360C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="306dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.26">
+
+
+        <RadioButton
+            android:id="@+id/radioChampi"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/ces_champignons_en_pleine_for_t_ont_l_air_excellents"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioConserve"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/vive_les_bo_tes_de_conserve"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioPeche"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/une_partie_de_p_che_s_impose"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioJeun"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/je_ne_mange_pas"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioTrou"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/un_trou_tr_s_profond_dans_la_terre_pour_d_busquer_insectes_et_racines"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
